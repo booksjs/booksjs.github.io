@@ -1,0 +1,114 @@
+:root{
+    --mainFont: 'Raleway', sans-serif;
+    --pFont: 'Lato', sans-serif;
+    --navFontSize: 14pt;
+    --navHFontSize: 24pt;
+    --hFontSize: 28pt;
+    --pFontSize: 18pt;
+    --pLineHeight: 22pt;
+    --width: 100vw;
+    --maxWidth: 650px;
+    --mainPadding: calc((100vw - 650px) / 2);
+}
+*{
+    font-family: var(--mainFont);
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.doks-navbar{
+    width: var(--width);
+    max-width: var(--maxWidth);
+
+    margin: auto;
+    padding: 12px;
+    padding-top: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.doks-navbar > a > img{
+    width:75px;
+    margin: 0 10px 0 10px;
+}
+.doks-navbar > div > a{
+    font-size: var(--navFontSize);
+    color: rgb(160, 160, 160);
+
+    margin: 15px;
+    text-decoration: none;
+
+    transition: all .25s ease;
+}
+.doks-navbar > div > a:hover{
+    color: #282828;
+}
+.doks-nav-h{
+    font-size: var(--navHFontSize);
+    font-weight: 900;
+    color: dodgerblue;
+    text-decoration: none;
+}
+.doks-main{
+    width: var(--width);
+    max-width: var(--maxWidth);
+
+    margin: auto;
+    padding: 45px 25px 50px 25px;
+}
+.doks-h{
+    display: inline-block;
+
+    font-weight: 900;
+    font-size: var(--hFontSize);
+    color: rgb(160, 160, 160);
+
+    margin: 15px 0;
+
+    transition: all .25s ease;
+}
+.doks-h:hover{
+    cursor: pointer;
+    color: #282828;
+}
+.doks-p{
+    font-family: var(--pFont);
+    font-weight: 100;
+    font-size: var(--pFontSize);
+    line-height: var(--pLineHeight);
+}
+.doks-p > a{
+    color: dodgerblue;
+    text-decoration: none;
+}
+.doks-p > a:hover{
+    color: rgb(21, 123, 226);
+    text-decoration: underline;
+}
+.doks-b{
+    font-weight: 700;
+    color: dodgerblue;
+}
+.doks-pimg{
+    margin: 25px;
+}
+.doks-btn{
+    display: block;
+    background: dodgerblue;
+    color: white;
+
+    margin: 10px;
+    padding: 15px;
+
+    font-size: var(--pFontSize);
+    font-weight: 900;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 10px;
+}
+.doks-btn:hover{
+    background: rgb(26, 123, 221);
+}

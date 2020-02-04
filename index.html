@@ -4,127 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Intro - books.js</title>
+    <title>BooksJS</title>
     <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" src="./assets/css/main.css">
-    <style>
-      :root{
-        --mainFont: 'Raleway', sans-serif;
-        --pFont: 'Lato', sans-serif;
-        --navFontSize: 14pt;
-        --navHFontSize: 24pt;
-        --hFontSize: 28pt;
-        --pFontSize: 18pt;
-        --pLineHeight: 22pt;
-        --width: 100vw;
-        --maxWidth: 650px;
-        --mainPadding: calc((100vw - 650px) / 2);
-      }
-      *{
-        font-family: var(--mainFont);
-      }
-      ::-webkit-scrollbar {
-        display: none;
-      }
-      .doks-navbar{
-        width: var(--width);
-        max-width: var(--maxWidth);
-        
-        margin: auto;
-        padding: 12px;
-        padding-top: 20px;
-        
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-      .doks-navbar > a > img{
-        width:75px;
-        margin: 0 10px 0 10px;
-      }
-      .doks-navbar > div > a{
-        font-size: var(--navFontSize);
-        color: rgb(160, 160, 160);
-        
-        margin: 15px;
-        text-decoration: none;
-
-        transition: all .25s ease;
-      }
-      .doks-navbar > div > a:hover{
-        color: #282828;
-      }
-      .doks-nav-h{
-        font-size: var(--navHFontSize);
-        font-weight: 900;
-        color: dodgerblue;
-        text-decoration: none;
-      }
-      .doks-main{
-        width: var(--width);
-        max-width: var(--maxWidth);
-        
-        margin: auto;
-        padding: 45px 25px 50px 25px;
-      }
-      .doks-h{
-        display: inline-block;
-
-        font-weight: 900;
-        font-size: var(--hFontSize);
-        color: rgb(160, 160, 160);
-        
-        margin: 15px 0;
-
-        transition: all .25s ease;
-      }
-      .doks-h:hover{
-        cursor: pointer;
-        color: #282828;
-      }
-      .doks-p{
-        font-family: var(--pFont);
-        font-weight: 100;
-        font-size: var(--pFontSize);
-        line-height: var(--pLineHeight);
-      }
-      .doks-p > b{
-        font-weight: 700;
-        color: dodgerblue;
-      }
-      .doks-p > a{
-        color: dodgerblue;
-        text-decoration: none;
-      }
-      .doks-p > a:hover{
-        color: rgb(21, 123, 226);
-        text-decoration: underline;
-      }
-      .doks-pimg{
-        margin: 25px;
-      }
-      .doks-btn{
-        display: block;
-        background: dodgerblue;
-        color: white;
-
-        margin: 10px;
-        padding: 15px;
-
-        font-size: var(--pFontSize);
-        font-weight: 900;
-
-        cursor: pointer;
-
-        border: none;
-        border-radius: 10px;
-      }
-      .doks-btn:hover{
-        background: rgb(26, 123, 221);
-      }
-    </style>
+    <link rel="stylesheet" href="./assets/css/main.css">
   </head>
   <body>
     <header class="doks-header">
@@ -145,7 +29,7 @@
       <div>
         <h1 id="intro" class="doks-h">Introduction</h1>
         <p class="doks-p">
-          📖 <b>BooksJS</b> is an open-source JavaScript library for building interactive book previews on the web. You can check out this project on
+          📖 <a class="doks-b" href="/">BooksJS</a> is an open-source JavaScript library for building interactive book previews on the web. You can check out this project on
           <a href="https://lnkd.in/fRS9cJt.">GitHub</a>.
         </p>
         <p class="doks-pimg">
@@ -155,14 +39,14 @@
       <div>
         <h1 id="example" class="doks-h">Example</h1>
         <p class="doks-p">
-          Try out <b>BooksJS</b>!
+          Try out <a class="doks-b" href="/">BooksJS</a>!
           <button id="tryme" class="doks-btn">Click Me!</button>
         </p>
       </div>
       <div>
         <h1 id="about" class="doks-h">About</h1>
         <p class="doks-p">
-          📖 <b>BooksJS</b> or <b>books.js</b> is an open-source JavaScript library for building interactive book previews on the web. The code is licensed under the MIT License.
+          📖 <a class="doks-b" href="/">BooksJS</a> or <a class="doks-b" href="/">books.js</a> is an open-source JavaScript library for building interactive book previews on the web. The code is licensed under the MIT License.
           <br /><br />
           BooksJS core features use PDF.js thus requires it to function properly. 
           PDF.js is licensed under Apache License. No PDF.js code was changed in the making of this project.
