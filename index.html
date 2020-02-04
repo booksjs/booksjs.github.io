@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Intro - books.js</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" src="./assets/css/main.css">
+    <style>
+      :root{
+        --mainFont: 'Raleway', sans-serif;
+        --pFont: 'Lato', sans-serif;
+        --navFontSize: 14pt;
+        --navHFontSize: 24pt;
+        --hFontSize: 28pt;
+        --pFontSize: 18pt;
+        --pLineHeight: 22pt;
+        --width: 100vw;
+        --maxWidth: 650px;
+        --mainPadding: calc((100vw - 650px) / 2);
+      }
+      *{
+        font-family: var(--mainFont);
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+      .doks-navbar{
+        width: var(--width);
+        max-width: var(--maxWidth);
+        
+        margin: auto;
+        padding: 12px;
+        padding-top: 20px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .doks-navbar > a > img{
+        width:75px;
+        margin: 0 10px 0 10px;
+      }
+      .doks-navbar > div > a{
+        font-size: var(--navFontSize);
+        color: rgb(160, 160, 160);
+        
+        margin: 15px;
+        text-decoration: none;
+
+        transition: all .25s ease;
+      }
+      .doks-navbar > div > a:hover{
+        color: #282828;
+      }
+      .doks-nav-h{
+        font-size: var(--navHFontSize);
+        font-weight: 900;
+        color: dodgerblue;
+        text-decoration: none;
+      }
+      .doks-main{
+        width: var(--width);
+        max-width: var(--maxWidth);
+        
+        margin: auto;
+        padding: 45px 25px 50px 25px;
+      }
+      .doks-h{
+        display: inline-block;
+
+        font-weight: 900;
+        font-size: var(--hFontSize);
+        color: rgb(160, 160, 160);
+        
+        margin: 15px 0;
+
+        transition: all .25s ease;
+      }
+      .doks-h:hover{
+        cursor: pointer;
+        color: #282828;
+      }
+      .doks-p{
+        font-family: var(--pFont);
+        font-weight: 100;
+        font-size: var(--pFontSize);
+        line-height: var(--pLineHeight);
+      }
+      .doks-p > b{
+        font-weight: 700;
+        color: dodgerblue;
+      }
+      .doks-p > a{
+        color: dodgerblue;
+        text-decoration: none;
+      }
+      .doks-p > a:hover{
+        color: rgb(21, 123, 226);
+        text-decoration: underline;
+      }
+      .doks-pimg{
+        margin: 25px;
+      }
+      .doks-btn{
+        display: block;
+        background: dodgerblue;
+        color: white;
+
+        margin: 10px;
+        padding: 15px;
+
+        font-size: var(--pFontSize);
+        font-weight: 900;
+
+        cursor: pointer;
+
+        border: none;
+        border-radius: 10px;
+      }
+      .doks-btn:hover{
+        background: rgb(26, 123, 221);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="doks-header">
+      <nav class="doks-navbar">
+        <a href="/" class="doks-nav-h">
+          BooksJS
+          <!-- <img src="./assets/header-booksjs.png"> -->
+        </a>
+        <div>
+          <a href="#">Documentation</a>
+          <a href="#example">Example</a>
+          <a href="#about">About</a>
+          <a href="#license">License</a>
+        </div>
+      </nav>
+    </header>
+    <main class="doks-main">
+      <div>
+        <h1 id="intro" class="doks-h">Introduction</h1>
+        <p class="doks-p">
+          📖 <b>BooksJS</b> is an open-source JavaScript library for building interactive book previews on the web. You can check out this project on
+          <a href="https://lnkd.in/fRS9cJt.">GitHub</a>.
+        </p>
+        <p class="doks-pimg">
+          <img src="./assets/booksjs.gif">
+        </p>
+      </div>
+      <div>
+        <h1 id="example" class="doks-h">Example</h1>
+        <p class="doks-p">
+          Try out <b>BooksJS</b>!
+          <button id="tryme" class="doks-btn">Click Me!</button>
+        </p>
+      </div>
+      <div>
+        <h1 id="about" class="doks-h">About</h1>
+        <p class="doks-p">
+          📖 <b>BooksJS</b> or <b>books.js</b> is an open-source JavaScript library for building interactive book previews on the web. The code is licensed under the MIT License.
+          <br /><br />
+          BooksJS core features use PDF.js thus requires it to function properly. 
+          PDF.js is licensed under Apache License. No PDF.js code was changed in the making of this project.
+        </p>
+      </div>
+      <div>
+        <h1 id="license" class="doks-h">MIT License</h1>
+        <p class="doks-p">
+          Copyright © 2020 BooksJS
+          <br /><br />
+          Permission is hereby granted, free of charge, to any person obtaining
+          a copy of this software and associated documentation files (the
+          “Software”), to deal in the Software without restriction, including
+          without limitation the rights to use, copy, modify, merge, publish,
+          distribute, sublicense, and/or sell copies of the Software, and to
+          permit persons to whom the Software is furnished to do so, subject to
+          the following conditions:
+          <br /><br />
+          The above copyright notice and this permission notice shall be
+          included in all copies or substantial portions of the Software.
+          <br /><br />
+          THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        </p>
+      </div>
+    </main>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="https://booksjs.github.io/books/js/books.min.js"></script>
+    <script>
+      var booksjs = booksjsLib('assets/pdf.pdf');
+      var button = document.getElementById('tryme');
+      button.onclick = function(){
+        booksjs.loadDocument();
+      }
+    </script>
+  </body>
+</html>
